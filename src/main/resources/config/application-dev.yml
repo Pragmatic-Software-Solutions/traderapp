@@ -48,12 +48,15 @@ spring:
       port: 8500
   data:
     mongodb:
-      uri: mongodb://localhost:27017
+      uri:  mongodb+srv://dbuser:dbuser@cluster0-xft08.mongodb.net/traderapp
       database: traderapp
     elasticsearch:
       properties:
         path:
           home: build/elasticsearch
+  datasource:
+    username: dbuser
+    password: dbuser
   mail:
     host: localhost
     port: 25
